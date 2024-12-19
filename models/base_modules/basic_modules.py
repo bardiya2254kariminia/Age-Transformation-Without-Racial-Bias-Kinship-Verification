@@ -211,7 +211,8 @@ class DiscriminatorZ_multistyle(nn.Module):
 class DiscriminatorImg(nn.Module):
     def __init__(self):
         super(DiscriminatorImg, self).__init__()
-        in_dims = (3, 16 + consts.LABEL_LEN_EXPANDED, 32, 64)
+        # in_dims = (3, 16 + consts.LABEL_LEN_EXPANDED, 32, 64)
+        in_dims = (3, 118, 32, 64)
         out_dims = (16, 32, 64, 128)
         self.conv_layers = nn.ModuleList()
         self.fc_layers = nn.ModuleList()

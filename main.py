@@ -134,7 +134,18 @@ if __name__ == "__main__":
             os.remove(log_path)
         logging.basicConfig(filename=log_path, level=logging.DEBUG)
 
-        network.teach(
+        # network.teach(
+        #     utkface_path=data_src,
+        #     batch_size=args.batch_size,
+        #     betas=betas,
+        #     epochs=args.epochs,
+        #     weight_decay=weight_decay,
+        #     lr=lr,
+        #     should_plot=args.sp,
+        #     where_to_save=results_dest,
+        #     models_saving=args.models_saving,
+        # )
+        network.teach2(
             utkface_path=data_src,
             batch_size=args.batch_size,
             betas=betas,

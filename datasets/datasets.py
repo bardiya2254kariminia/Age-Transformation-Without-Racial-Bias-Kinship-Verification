@@ -30,7 +30,7 @@ class Celeba_10000_dataset(Dataset):
             self.annotations.iloc[index][2],
             self.annotations.iloc[index][3],
         )
-        print(file_path, age, gender)
+        # print(file_path, age, gender)
         image = Image.open(os.path.join(self.image_folder, file_path))
         image = self.transform(image)
         if gender == "Woman":
