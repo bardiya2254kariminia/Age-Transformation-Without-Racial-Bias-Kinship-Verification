@@ -1,0 +1,15 @@
+venv/
+.idea/
+!.gitignore
+reeults
+test_log
+test_image
+trained-models
+task
+doc
+data
+downloads
+test_log
+checkpoints
+testing
+learn.py

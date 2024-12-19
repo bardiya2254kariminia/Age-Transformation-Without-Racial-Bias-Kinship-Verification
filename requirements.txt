@@ -1,0 +1,12 @@
+torch-summary
+torch
+torchvision
+Ninja
+numpy
+scikit-learn
+pandas
+tqdm
+pillow
+opencv-python
+matplotlib
+dlib

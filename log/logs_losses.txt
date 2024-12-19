@@ -1,0 +1,203 @@
+100% 829/829 [08:17<00:00,  1.67it/s]
+----------------------------------------------
+Epoch 1 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03794000297784805], 'Dz_loss': [1.434324026107788], 'ez_loss': [0.5497603416442871], 'Dimg_loss': [1.3925349712371826], 'Dg_loss': [0.6277742385864258], 'eg_loss': [0], 'ID_loss': [tensor(24.5060, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [3.335428482387215e-05], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2826, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[12:10] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch1
+in plot
+100% 829/829 [08:14<00:00,  1.68it/s]
+----------------------------------------------
+Epoch 2 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03572458028793335], 'Dz_loss': [1.4380600452423096], 'ez_loss': [0.5431176424026489], 'Dimg_loss': [1.4009793996810913], 'Dg_loss': [0.6177642345428467], 'eg_loss': [0], 'ID_loss': [tensor(23.3701, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [1.3601752471004147e-05], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2958, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[12:19] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch2
+Removed 18 trained models from /content/MARK1/trained_models/epoch1
+in plot
+100% 829/829 [08:26<00:00,  1.64it/s]
+----------------------------------------------
+Epoch 3 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03403354808688164], 'Dz_loss': [1.4302417039871216], 'ez_loss': [0.55199134349823], 'Dimg_loss': [1.374051809310913], 'Dg_loss': [0.6366238594055176], 'eg_loss': [0], 'ID_loss': [tensor(23.4143, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [5.637904905597679e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2243, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[12:27] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch3
+Removed 18 trained models from /content/MARK1/trained_models/epoch2
+in plot
+100% 829/829 [08:27<00:00,  1.63it/s]
+----------------------------------------------
+Epoch 4 Loss: defaultdict(<class 'list'>, {'total_variation': [0.033910103142261505], 'Dz_loss': [1.424794316291809], 'ez_loss': [0.55963134765625], 'Dimg_loss': [1.3707149028778076], 'Dg_loss': [0.6427693367004395], 'eg_loss': [0], 'ID_loss': [tensor(22.9839, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [5.700652764062397e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2455, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[12:36] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch4
+Removed 18 trained models from /content/MARK1/trained_models/epoch3
+in plot
+100% 829/829 [08:30<00:00,  1.62it/s]
+----------------------------------------------
+Epoch 5 Loss: defaultdict(<class 'list'>, {'total_variation': [0.0331428200006485], 'Dz_loss': [1.4302654266357422], 'ez_loss': [0.5482450723648071], 'Dimg_loss': [1.383097529411316], 'Dg_loss': [0.6381866931915283], 'eg_loss': [0], 'ID_loss': [tensor(23.4834, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [2.1276673578540795e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2175, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[12:44] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch5
+Removed 18 trained models from /content/MARK1/trained_models/epoch4
+in plot
+100% 829/829 [08:32<00:00,  1.62it/s]
+----------------------------------------------
+Epoch 6 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03222096711397171], 'Dz_loss': [1.4510917663574219], 'ez_loss': [0.5529135465621948], 'Dimg_loss': [1.3850113153457642], 'Dg_loss': [0.6143407821655273], 'eg_loss': [0], 'ID_loss': [tensor(23.0427, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [2.9536010970332427e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2360, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[12:53] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch6
+Removed 18 trained models from /content/MARK1/trained_models/epoch5
+in plot
+100% 829/829 [08:33<00:00,  1.61it/s]
+----------------------------------------------
+Epoch 7 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03490141034126282], 'Dz_loss': [1.4390876293182373], 'ez_loss': [0.5533314347267151], 'Dimg_loss': [1.383476734161377], 'Dg_loss': [0.6478759050369263], 'eg_loss': [0], 'ID_loss': [tensor(22.7329, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [5.007798790757079e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2611, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[13:02] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch7
+Removed 18 trained models from /content/MARK1/trained_models/epoch6
+in plot
+100% 829/829 [08:27<00:00,  1.63it/s]
+----------------------------------------------
+Epoch 8 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03230799734592438], 'Dz_loss': [1.445374846458435], 'ez_loss': [0.5467884540557861], 'Dimg_loss': [1.4045324325561523], 'Dg_loss': [0.6295133829116821], 'eg_loss': [0], 'ID_loss': [tensor(22.7270, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [6.763946657883935e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2208, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[13:10] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch8
+Removed 18 trained models from /content/MARK1/trained_models/epoch7
+in plot
+100% 829/829 [08:27<00:00,  1.63it/s]
+----------------------------------------------
+Epoch 9 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03211771696805954], 'Dz_loss': [1.4415998458862305], 'ez_loss': [0.5442615747451782], 'Dimg_loss': [1.412179946899414], 'Dg_loss': [0.6234195232391357], 'eg_loss': [0], 'ID_loss': [tensor(22.8306, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [2.295836566190701e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2127, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[13:19] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch9
+Removed 18 trained models from /content/MARK1/trained_models/epoch8
+in plot
+100% 829/829 [08:23<00:00,  1.64it/s]
+----------------------------------------------
+Epoch 10 Loss: defaultdict(<class 'list'>, {'total_variation': [0.032882459461688995], 'Dz_loss': [1.4256943464279175], 'ez_loss': [0.554054856300354], 'Dimg_loss': [1.380168080329895], 'Dg_loss': [0.6352118253707886], 'eg_loss': [0], 'ID_loss': [tensor(22.6907, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [3.7859326766920276e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2180, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[13:27] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch10
+Removed 18 trained models from /content/MARK1/trained_models/epoch9
+in plot
+100% 829/829 [08:16<00:00,  1.67it/s]
+----------------------------------------------
+Epoch 11 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03233649209141731], 'Dz_loss': [1.4462525844573975], 'ez_loss': [0.5471199750900269], 'Dimg_loss': [1.3726460933685303], 'Dg_loss': [0.6444653272628784], 'eg_loss': [0], 'ID_loss': [tensor(22.2120, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [2.7833114017994376e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2176, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[13:36] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch11
+Removed 18 trained models from /content/MARK1/trained_models/epoch10
+in plot
+100% 829/829 [08:13<00:00,  1.68it/s]
+----------------------------------------------
+Epoch 12 Loss: defaultdict(<class 'list'>, {'total_variation': [0.033821817487478256], 'Dz_loss': [1.4652559757232666], 'ez_loss': [0.5413928627967834], 'Dimg_loss': [1.3722450733184814], 'Dg_loss': [0.6451441049575806], 'eg_loss': [0], 'ID_loss': [tensor(22.5641, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [3.421901737965527e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2078, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[13:44] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch12
+Removed 18 trained models from /content/MARK1/trained_models/epoch11
+in plot
+100% 829/829 [08:16<00:00,  1.67it/s]
+----------------------------------------------
+Epoch 13 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03448560833930969], 'Dz_loss': [1.467876672744751], 'ez_loss': [0.5562729835510254], 'Dimg_loss': [1.4134202003479004], 'Dg_loss': [0.5953187942504883], 'eg_loss': [0], 'ID_loss': [tensor(22.3156, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [1.1282293144176947e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2182, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[13:53] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch13
+Removed 18 trained models from /content/MARK1/trained_models/epoch12
+in plot
+100% 829/829 [08:19<00:00,  1.66it/s]
+----------------------------------------------
+Epoch 14 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03509494289755821], 'Dz_loss': [1.4252334833145142], 'ez_loss': [0.5608617663383484], 'Dimg_loss': [1.3796597719192505], 'Dg_loss': [0.6406195163726807], 'eg_loss': [0], 'ID_loss': [tensor(22.3744, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [2.7226456040807534e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.1896, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[14:01] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch14
+Removed 18 trained models from /content/MARK1/trained_models/epoch13
+in plot
+100% 829/829 [08:20<00:00,  1.66it/s]
+----------------------------------------------
+Epoch 15 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03324563428759575], 'Dz_loss': [1.4120255708694458], 'ez_loss': [0.5458364486694336], 'Dimg_loss': [1.3831286430358887], 'Dg_loss': [0.644162654876709], 'eg_loss': [0], 'ID_loss': [tensor(22.3198, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [2.5001925223477883e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2075, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[14:09] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch15
+Removed 18 trained models from /content/MARK1/trained_models/epoch14
+in plot
+100% 829/829 [08:21<00:00,  1.65it/s]
+----------------------------------------------
+Epoch 16 Loss: defaultdict(<class 'list'>, {'total_variation': [0.033973947167396545], 'Dz_loss': [1.448756217956543], 'ez_loss': [0.552588939666748], 'Dimg_loss': [1.3937878608703613], 'Dg_loss': [0.6305997371673584], 'eg_loss': [0], 'ID_loss': [tensor(22.6317, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [1.3560025990955182e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2206, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[14:18] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch16
+Removed 18 trained models from /content/MARK1/trained_models/epoch15
+in plot
+100% 829/829 [08:23<00:00,  1.65it/s]
+----------------------------------------------
+Epoch 17 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03274155408143997], 'Dz_loss': [1.4293588399887085], 'ez_loss': [0.545500636100769], 'Dimg_loss': [1.4008901119232178], 'Dg_loss': [0.6293860673904419], 'eg_loss': [0], 'ID_loss': [tensor(22.2224, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [1.5997425180103164e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.1967, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[14:26] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch17
+Removed 18 trained models from /content/MARK1/trained_models/epoch16
+in plot
+100% 829/829 [08:34<00:00,  1.61it/s]
+----------------------------------------------
+Epoch 18 Loss: defaultdict(<class 'list'>, {'total_variation': [0.033718958497047424], 'Dz_loss': [1.4329397678375244], 'ez_loss': [0.5543347001075745], 'Dimg_loss': [1.3840779066085815], 'Dg_loss': [0.6534174680709839], 'eg_loss': [0], 'ID_loss': [tensor(22.1843, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [1.2868190424342174e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2120, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[14:35] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch18
+Removed 18 trained models from /content/MARK1/trained_models/epoch17
+in plot
+100% 829/829 [08:20<00:00,  1.65it/s]
+----------------------------------------------
+Epoch 19 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03451450169086456], 'Dz_loss': [1.4363881349563599], 'ez_loss': [0.5590507984161377], 'Dimg_loss': [1.3875384330749512], 'Dg_loss': [0.6342282891273499], 'eg_loss': [0], 'ID_loss': [tensor(21.9548, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [1.0877834029088262e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2208, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[14:43] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch19
+Removed 18 trained models from /content/MARK1/trained_models/epoch18
+in plot
+100% 829/829 [08:20<00:00,  1.66it/s]
+----------------------------------------------
+Epoch 20 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03404486924409866], 'Dz_loss': [1.4481871128082275], 'ez_loss': [0.5545075535774231], 'Dimg_loss': [1.376806616783142], 'Dg_loss': [0.6391231417655945], 'eg_loss': [0], 'ID_loss': [tensor(22.3924, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [8.610736585978884e-07], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.1774, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[14:52] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch20
+Removed 18 trained models from /content/MARK1/trained_models/epoch19
+in plot
+100% 829/829 [08:19<00:00,  1.66it/s]
+----------------------------------------------
+Epoch 21 Loss: defaultdict(<class 'list'>, {'total_variation': [0.033593371510505676], 'Dz_loss': [1.4566518068313599], 'ez_loss': [0.5351158380508423], 'Dimg_loss': [1.3798243999481201], 'Dg_loss': [0.6465495228767395], 'eg_loss': [0], 'ID_loss': [tensor(21.8838, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [1.263404215023911e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2063, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[15:00] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch21
+Removed 18 trained models from /content/MARK1/trained_models/epoch20
+in plot
+100% 829/829 [08:21<00:00,  1.65it/s]
+----------------------------------------------
+Epoch 22 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03468027710914612], 'Dz_loss': [1.4299111366271973], 'ez_loss': [0.5430368185043335], 'Dimg_loss': [1.3859193325042725], 'Dg_loss': [0.6494741439819336], 'eg_loss': [0], 'ID_loss': [tensor(22.2762, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [1.044145051309897e-06], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.1949, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[15:09] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch22
+Removed 18 trained models from /content/MARK1/trained_models/epoch21
+in plot
+100% 829/829 [08:29<00:00,  1.63it/s]
+----------------------------------------------
+Epoch 23 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03323506563901901], 'Dz_loss': [1.4342031478881836], 'ez_loss': [0.544235110282898], 'Dimg_loss': [1.394155502319336], 'Dg_loss': [0.6402033567428589], 'eg_loss': [0], 'ID_loss': [tensor(22.1479, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [8.834255140754976e-07], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.1966, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[15:17] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch23
+Removed 18 trained models from /content/MARK1/trained_models/epoch22
+in plot
+100% 829/829 [08:36<00:00,  1.60it/s]
+----------------------------------------------
+Epoch 24 Loss: defaultdict(<class 'list'>, {'total_variation': [0.03357064351439476], 'Dz_loss': [1.447914719581604], 'ez_loss': [0.5469605922698975], 'Dimg_loss': [1.363921880722046], 'Dg_loss': [0.6490522623062134], 'eg_loss': [0], 'ID_loss': [tensor(22.1492, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [7.865680231589067e-07], 'Cyclic_loss': [0], 'Recunstruction_loss': [tensor(0.2132, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[15:26] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch24
+Removed 18 trained models from /content/MARK1/trained_models/epoch23
+in plot
+100% 829/829 [27:06<00:00,  1.96s/it]
+----------------------------------------------
+Epoch 25 Loss: defaultdict(<class 'list'>, {'total_variation': [0.054405368864536285], 'Dz_loss': [1.418205976486206], 'ez_loss': [0.5550882816314697], 'Dimg_loss': [1.450433611869812], 'Dg_loss': [0.5848617553710938], 'eg_loss': [0], 'ID_loss': [tensor(18.3596, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [6.439428261728608e-07], 'Cyclic_loss': [tensor(0.6730, device='cuda:0', grad_fn=<AddBackward0>)], 'Recunstruction_loss': [tensor(0.4805, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[15:53] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch25
+Removed 18 trained models from /content/MARK1/trained_models/epoch24
+in plot
+100% 829/829 [27:21<00:00,  1.98s/it]
+----------------------------------------------
+Epoch 26 Loss: defaultdict(<class 'list'>, {'total_variation': [0.05010254681110382], 'Dz_loss': [1.4354764223098755], 'ez_loss': [0.548827588558197], 'Dimg_loss': [1.3921735286712646], 'Dg_loss': [0.610925555229187], 'eg_loss': [0], 'ID_loss': [tensor(16.9943, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [5.7050147006521e-07], 'Cyclic_loss': [tensor(0.5183, device='cuda:0', grad_fn=<AddBackward0>)], 'Recunstruction_loss': [tensor(0.4533, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[16:21] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch26
+Removed 18 trained models from /content/MARK1/trained_models/epoch25
+in plot
+100% 829/829 [26:53<00:00,  1.95s/it]
+----------------------------------------------
+Epoch 27 Loss: defaultdict(<class 'list'>, {'total_variation': [0.05511942505836487], 'Dz_loss': [1.4078688621520996], 'ez_loss': [0.5620611906051636], 'Dimg_loss': [1.4442261457443237], 'Dg_loss': [0.5953173041343689], 'eg_loss': [0], 'ID_loss': [tensor(16.9835, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [4.842876251132111e-07], 'Cyclic_loss': [tensor(0.4889, device='cuda:0', grad_fn=<AddBackward0>)], 'Recunstruction_loss': [tensor(0.4719, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[16:48] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch27
+Removed 18 trained models from /content/MARK1/trained_models/epoch26
+in plot
+100% 829/829 [27:44<00:00,  2.01s/it]
+----------------------------------------------
+Epoch 28 Loss: defaultdict(<class 'list'>, {'total_variation': [0.05354670062661171], 'Dz_loss': [1.425490379333496], 'ez_loss': [0.5463398694992065], 'Dimg_loss': [1.4432240724563599], 'Dg_loss': [0.5961266756057739], 'eg_loss': [0], 'ID_loss': [tensor(16.7714, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [4.821588959202927e-07], 'Cyclic_loss': [tensor(0.5186, device='cuda:0', grad_fn=<AddBackward0>)], 'Recunstruction_loss': [tensor(0.4850, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[17:16] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch28
+Removed 18 trained models from /content/MARK1/trained_models/epoch27
+in plot
+100% 829/829 [27:54<00:00,  2.02s/it]
+----------------------------------------------
+Epoch 29 Loss: defaultdict(<class 'list'>, {'total_variation': [0.05046270042657852], 'Dz_loss': [1.4463729858398438], 'ez_loss': [0.5447132587432861], 'Dimg_loss': [1.4004497528076172], 'Dg_loss': [0.624618411064148], 'eg_loss': [0], 'ID_loss': [tensor(18.0195, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [4.544853027255158e-07], 'Cyclic_loss': [tensor(0.6627, device='cuda:0', grad_fn=<AddBackward0>)], 'Recunstruction_loss': [tensor(0.4477, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[17:44] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch29
+Removed 18 trained models from /content/MARK1/trained_models/epoch28
+in plot
+100% 829/829 [27:52<00:00,  2.02s/it]
+----------------------------------------------
+Epoch 30 Loss: defaultdict(<class 'list'>, {'total_variation': [0.05371730774641037], 'Dz_loss': [1.4437713623046875], 'ez_loss': [0.5528472661972046], 'Dimg_loss': [1.4209059476852417], 'Dg_loss': [0.6025598049163818], 'eg_loss': [0], 'ID_loss': [tensor(15.5488, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [4.2787615939232637e-07], 'Cyclic_loss': [tensor(0.4642, device='cuda:0', grad_fn=<AddBackward0>)], 'Recunstruction_loss': [tensor(0.4638, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[18:12] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch30
+Removed 18 trained models from /content/MARK1/trained_models/epoch29
+in plot
+100% 829/829 [27:53<00:00,  2.02s/it]
+----------------------------------------------
+Epoch 31 Loss: defaultdict(<class 'list'>, {'total_variation': [0.05003228783607483], 'Dz_loss': [1.4434224367141724], 'ez_loss': [0.5488508939743042], 'Dimg_loss': [1.3940980434417725], 'Dg_loss': [0.6293714046478271], 'eg_loss': [0], 'ID_loss': [tensor(16.0537, device='cuda:0', grad_fn=<NllLossBackward0>)], 'age_loss': [3.8104391819615557e-07], 'Cyclic_loss': [tensor(0.4897, device='cuda:0', grad_fn=<AddBackward0>)], 'Recunstruction_loss': [tensor(0.4369, device='cuda:0', grad_fn=<MeanBackward0>)]})
+[18:40] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch31
+Removed 18 trained models from /content/MARK1/trained_models/epoch30
+in plot
+ 83% 685/829 [23:00<04:50,  2.02s/it]
+[19:03] 
+CTRL+C detected, saving model
+
+[19:03] Saved Age_Classifier, Age_Modulator, Dimg, Dz, E, Freezed_stylegan_generator, G, age_classifier_optimizer, age_modulator_optimizer, arc_face_loss_optimizer, cross_entropy_loss, di_optimizer, dz_optimizer, eg_optimizer, id_loss, lpips_loss, mlp, mse_loss to /content/MARK1/trained_models/epoch32
+Removed 18 trained models from /content/MARK1/trained_models/epoch31
+Traceback (most recent call last):
+  File "/content/MARK1/main.py", line 77, in <module>
+    network.teach(
+  File "/content/MARK1/network.py", line 689, in teach
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
