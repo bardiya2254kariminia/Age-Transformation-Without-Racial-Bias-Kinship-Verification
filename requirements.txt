@@ -1,5 +1,6 @@
 torch-summary
 torch
+imageio
 torchvision
 Ninja
 numpy
@@ -9,4 +10,7 @@ tqdm
 pillow
 opencv-python
 matplotlib
-dlib
+gdown
+nvidia-pyindex
+nvidia-cuda-runtime-cu11
+pyncclient

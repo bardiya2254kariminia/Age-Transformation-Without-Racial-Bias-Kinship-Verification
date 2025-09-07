@@ -18,4 +18,12 @@ DATASETS = {
         "test_source_root": dataset_paths["test_celeba_10000"],
         "test_target_root": dataset_paths["test_celeba_10000"],
     },
+    "rage_gan": {
+        "transforms": transforms_config.EncodeTransforms,
+        "annotations": dataset_paths["rage_gan_train_annotations"],
+        "train_source_root": dataset_paths["rage_gan_train"],
+        "train_target_root": dataset_paths["rage_gan_train"],
+        "test_source_root": dataset_paths["rage_gan_test"],
+        "test_target_root": dataset_paths["rage_gan_test"],
+    },
 }

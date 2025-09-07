@@ -28,17 +28,13 @@ class FusedLeakyReLUFunctionBackward(Function):
             grad_output, empty, out, 3, 1, negative_slope, scale
         )
 
-        # print(f"{grad_input.shape= }")
         dim = [0]
 
         if grad_input.ndim > 2:
             dim += list(range(2, grad_input.ndim))
-        # print(dim)
+
         grad_bias = grad_input.sum(dim).detach()
-        if grad_input.ndim == 3:
-          grad_bias = grad_input.sum(dim = [0,1]).detach()
-        # print(f"{grad_output.shape =}")
-        # print(f"{grad_input.shape = } , {grad_bias.shape = }")
+
         return grad_input, grad_bias
 
     @staticmethod
@@ -86,5 +82,4 @@ class FusedLeakyReLU(nn.Module):
 
 
 def fused_leaky_relu(input, bias, negative_slope=0.2, scale=2 ** 0.5):
-    # print(f"{input.shape =} fused, {bias.shape =} fused")
     return FusedLeakyReLUFunction.apply(input, bias, negative_slope, scale)

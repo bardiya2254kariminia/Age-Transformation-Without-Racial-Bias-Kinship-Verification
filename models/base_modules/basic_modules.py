@@ -5,7 +5,7 @@ from tqdm import tqdm
 import logging
 import random
 from collections import OrderedDict
-import imageio
+# import imageio
 import cv2
 from PIL import Image
 
