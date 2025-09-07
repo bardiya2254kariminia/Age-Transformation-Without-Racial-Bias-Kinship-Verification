@@ -19,3 +19,20 @@ Be aware that the paper is still under revision in the journal.
 <img src="images\Intro4.jpg" width="1000px"/>    
 <img src="images\Intro5.jpg" width="1000px"/>    
 </p>
+
+## Description
+Official implementation of the model RA-GAN from the paper "A Race Biass Free Face aging model"
+from the first image to the end Races are white, Asian , Black , Indian respectivly.
+
+
+### Installation and setup
+for the installation and project setup please use the latest cuda setup version.
+then run the following command in the command line (cmd):
+
+```
+    sudo apt update
+    sudp apt upgrade
+    pip install -r requirements.txt
+```
+also for this project we used Shahid Beheshti university Gitlab server storage for the datas.
+if you don't have access to it please comment the ussage of them in the `main.py` file.
