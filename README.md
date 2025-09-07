@@ -26,13 +26,19 @@ from the first image to the end Races are white, Asian , Black , Indian respecti
 
 
 ### Installation and setup
-for the installation and project setup please use the latest cuda setup version.
+for the installation and project setup please use the latest cuda setup version and use `Python  3.11.3` or later version.
 then run the following command in the command line (cmd):
 
 ```
-    sudo apt update
-    sudp apt upgrade
-    pip install -r requirements.txt
+sudo apt update
+sudp apt upgrade
+pip install -r requirements.txt
 ```
 also for this project we used Shahid Beheshti university Gitlab server storage for the datas.
 if you don't have access to it please comment the ussage of them in the `main.py` file.
+
+### Dataset's
+you can download the following dataset used for this project from [Here](URL).
+the Dataset has been gathered from  [UTKFACE](https://susanqq.github.io/UTKFace)
+and for high resoulation we used [GFPGAN](https://github.com/TencentARC/GFPGAN).
+
