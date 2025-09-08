@@ -1,15 +1,7 @@
 # A Race Biass Free Face aging model
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" height=22.5></a>
-> The age gap in kinship verification addresses the time difference between the
-photos of the parent and the child. Moreover, their same-age photos are often
-unavailable, and face aging models are racially biased, which impacts the likeness
-of photos. Therefore, we propose a face aging GAN model, RA-GAN, consisting
-of two new modules, RACEpSp and a feature mixer, to produce racially unbiased images. The unbiased synthesized photos are used in kinship verification to investigate the results of verifying same-age parent-child images. The experiments
-demonstrate that our RA-GAN outperforms SAM-GAN on an average of 13.14%
-across all age groups, and CUSP-GAN in the 60+ age group by 9.1% in terms of
-racial accuracy. Moreover, RA-GAN can preserve subjects’ identities better than
-SAM-GAN and CUSP-GAN across all age groups.Our method conduct a fine grained module called race mixer in-order to
-Generalize the models capability on Generating desirable image with preserved ethnicity and with few amount of data.
+
+Kinship verification is a challenging task due to the age gap between parent and child photos, as their same-age images are rarely available. Existing face aging models aim to address this gap but often suffer from racial bias and poor identity preservation, which reduce fairness and accuracy in kinship verification. To tackle these issues, we introduce RA-GAN, a race-unbiased face aging model that incorporates two novel components: RACEpSp, which mitigates racial bias, and a feature mixer, which enhances identity preservation. The unbiased synthesized faces are then used to transform parent and child images into the same age group for verification. Experimental results on the KinFaceW-I and KinFaceW-II datasets show that RA-GAN outperforms prior methods, achieving an average improvement of 13.14% over SAM-GAN across all age groups and 9.1% over CUSP-GAN in the 60+ age group in terms of racial accuracy. Furthermore, RA-GAN consistently preserves identity features better than competing models and improves verification accuracy across all kinship relationships. These results demonstrate that RA-GAN provides a more fair, accurate, and identity-preserving solution for kinship verification.
 Be aware that the paper is still under revision in the journal.
 
 <p align="center">
@@ -20,7 +12,7 @@ Be aware that the paper is still under revision in the journal.
 <img src="images\Intro5.jpg" width="1000px"/>    
 </p>
 
-## Description
+#### Description
 Official implementation of the model RA-GAN from the paper "A Race Biass Free Face aging model"
 from the first image to the end Races are white, Asian , Black , Indian respectivly.
 
@@ -35,6 +27,8 @@ then run the following command in the command line (cmd):
 ```
 sudo apt update
 sudp apt upgrade
+git clone https://github.com/bardiya2254kariminia/An-Age-Transformation-whitout-racial-bias-for-Kinship-verification.git
+cd An-Age-Transformation-whitout-racial-bias-for-Kinship-verification
 pip install -r requirements.txt
 ```
 also for this project we used Shahid Beheshti university Gitlab server storage for the datas.
@@ -64,4 +58,45 @@ and for high resoulation we used [GFPGAN](https://github.com/TencentARC/GFPGAN).
 |[Resnet_34_7](https://drive.google.com/drive/folders/1F_pXfbzWvG-bhCpNsRj6F_xsdjpesiFu?usp=sharing) | The Resnet34 has been trained on the [FairFace](https://github.com/dchen236/FairFace/tree/master?tab=readme-ov-file) dataset for with 7 output type White,Black,Indian,Asian and others (for more information visit [HERE](https://github.com/dchen236/FairFace/tree/master?tab=readme-ov-file)). 
 |[Resnet_34_4](https://drive.google.com/drive/folders/1F_pXfbzWvG-bhCpNsRj6F_xsdjpesiFu?usp=sharing) | The Resnet34 has been trained on the [FairFace](https://github.com/dchen236/FairFace/tree/master?tab=readme-ov-file) dataset for with 4 output type White,Black,Indian,Asian. We used it for the Race preservation evavluation metric.  
 
+### Motiation
+Kinship verification aims to determine whether two people are biologically related based on facial images. A major challenge in this task is the age gap between parents and children, since their photos are usually taken at different life stages. Existing face aging models try to reduce this gap by synthesizing same-age faces, but most of them suffer from two critical issues:
 
+-   Racial bias – Many face aging models are trained on datasets dominated by specific races, which leads to distorted or less realistic results for underrepresented groups. This bias negatively impacts kinship verification fairness.
+
+-   Identity preservation – Some existing GAN-based models fail to maintain the unique identity features of individuals while performing age transformations, reducing verification reliability.
+
+To overcome these issues, we propose RA-GAN, a race-unbiased face aging GAN that integrates two novel modules — RACEpSp and a feature mixer — to generate realistic, identity-preserving, and racially unbiased age-progressed faces. By aligning parent and child images to the same age group, RA-GAN significantly improves kinship verification accuracy and ensures fair performance across racial groups.
+
+### Method overview
+
+#### Age Transformation
+An overview of this phase is depicted in the  following image:
+<p align="center">
+<img src="images\method_overview1.png" width="1000px"/>
+</p>
+
+-   `Age_Encoder`: used for extracting corrolations between desired age and base image. 
+Our method conducts using 4 seperated module
+-   `RACEPsP` : used for getting and embbeded vector of input image that contains facial and identity concepts.
+although the dataset for different tasks cannot guarantee balance  racial ratio. we have racenet which is used to extract race related features from the base image and give us 3 set of tensor, which give us different abstraction and detail for representing these informations. also we have a Pyramidnet which is a Pixle2Style2Pixle encoder for extracting facial infromation adn idenetity of the base image.Also Racenet anotehr self specified module is goinf to used for morphing the informations of both racenet and Pyramidnet.
+<p align="center">
+<img src="images\method_overview2.png" width="1000px"/>
+</p>
+
+-   `Feature_Mixer`: in the end after getting concept embeddings from both RACEPsP and Age_Encoder,each value in aging vector can have different impact on different face embedding value, thus ,we have  to mix them in a manner to get good aging and facial preservation quality.
+<p align="center">
+<img src="images\method_overview3.png" width="1000px"/>
+</p>
+
+-   `StyleGan_V2`: in the end phase, we have to construct the image based on the feature_mixer's output and we will use stylegan because of its capability on creating high quality and fidelity image conditioned on a latent vector.
+
+#### Kinship verification
+In this phase we will use out Age Transformation framework for changinf the age of the KinfaceI and KinfaceII dataset
+and givve them to the Kinship verificator model and get the output.
+<p align="center">
+<img src="images\method_overview4.png" width="1000px"/>
+</p>
+
+one of the challenges here is the images in those datasets arent  covering full head thus our model cannot generate usefull images and we will get unreliable outputs.
+To overcome  this obstacle, first, we will use a data augmentation technique called  mirror augmentation. we believed putting the face of a person in the middle of the image and using using a good  mirror augmentation can somehow imply to out desired base image for the network. Still the image is not good enough for being base image for us thus we used a pretrained Pixle2Style2Pixle model trained on our dataset for getting a full head output for each imahe in the Kinface datasets.
+Then we will feed the generated images to RA-GAN and get the transformed images  for each ages and give them to the Kinship verificator. Here the Kinship verificator is a [D4ML]() model which has the best  capability  for extracting kinship information and correlations.
