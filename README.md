@@ -26,7 +26,10 @@ from the first image to the end Races are white, Asian , Black , Indian respecti
 
 
 ### Installation and setup
-for the installation and project setup please use the latest cuda setup version and use `Python  3.11.3` or later version.
+for the installation and project setup please use the following setup :
+- `Python  3.11.3`
+- `NVIDIA GPU`
+- `CUDA CuDNN` package the lattest version (important)
 then run the following command in the command line (cmd):
 
 ```
@@ -37,8 +40,28 @@ pip install -r requirements.txt
 also for this project we used Shahid Beheshti university Gitlab server storage for the datas.
 if you don't have access to it please comment the ussage of them in the `main.py` file.
 
-### Dataset's
+### Pretrained Model & Dataset's
 you can download the following dataset used for this project from [Here](URL).
 the Dataset has been gathered from  [UTKFACE](https://susanqq.github.io/UTKFace)
 and for high resoulation we used [GFPGAN](https://github.com/TencentARC/GFPGAN).
+
+#### Dataset
+
+| Path | Description
+| :--- | :----------
+|[ِِDataset]() |the Dataset has been gathered from  [UTKFACE](https://susanqq.github.io/UTKFace) and for high resoulation we used [GFPGAN](https://github.com/TencentARC/GFPGAN).
+|[Kinface1 Age Transformation(from 20-80)]() | The output for the [Kinface1](https://www.kinfacew.com/datasets.html) dataset on the RA-GAN (Our) model
+|[Kinface2 Age Transformation(from 20-80)]() | The output for the [Kinface2](https://www.kinfacew.com/datasets.html) dataset on the RA-GAN (Our) model
+
+#### pretrained models and weights
+
+| Path | Description
+| :--- | :----------
+|[RA-GAN weights]() | The core of the paper contribution, Train on our Dataset for ethnicity fairness..
+|[FFHQ StyleGAN](https://drive.google.com/file/d/1EM87UquaoQmk17Q8d5kYIAHqu0dkYqdT/view?usp=sharing) | StyleGAN model pretrained on FFHQ taken from [rosinality](https://github.com/rosinality/stylegan2-pytorch) with 1024x1024 output resolution.
+|[IR-SE50 Model](https://drive.google.com/file/d/1KW7bjndL3QG3sxBbZxreGHigcCCpsDgn/view?usp=sharing) | Pretrained IR-SE50 model taken from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) for use in our ID loss during training.
+|[VGG Age Classifier](https://drive.google.com/file/d/1atzjZm_dJrCmFWCqWlyspSpr3nI6Evsh/view?usp=sharing) | VGG age classifier from DEX and fine-tuned on the FFHQ-Aging dataset for use in our aging loss
+|[Resnet_34_7](https://drive.google.com/drive/folders/1F_pXfbzWvG-bhCpNsRj6F_xsdjpesiFu?usp=sharing) | The Resnet34 has been trained on the [FairFace](https://github.com/dchen236/FairFace/tree/master?tab=readme-ov-file) dataset for with 7 output type White,Black,Indian,Asian and others (for more information visit [HERE](https://github.com/dchen236/FairFace/tree/master?tab=readme-ov-file)). 
+|[Resnet_34_4](https://drive.google.com/drive/folders/1F_pXfbzWvG-bhCpNsRj6F_xsdjpesiFu?usp=sharing) | The Resnet34 has been trained on the [FairFace](https://github.com/dchen236/FairFace/tree/master?tab=readme-ov-file) dataset for with 4 output type White,Black,Indian,Asian. We used it for the Race preservation evavluation metric.  
+
 
