@@ -1,5 +1,8 @@
 # A Race Biass Free Face aging model
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" height=22.5></a>
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/python-3.11.2-blue)
+![PyTorch](https://img.shields.io/badge/framework-PyTorch-orange)
+
 
 Kinship verification is a challenging task due to the age gap between parent and child photos, as their same-age images are rarely available. Existing face aging models aim to address this gap but often suffer from racial bias and poor identity preservation, which reduce fairness and accuracy in kinship verification. To tackle these issues, we introduce RA-GAN, a race-unbiased face aging model that incorporates two novel components: RACEpSp, which mitigates racial bias, and a feature mixer, which enhances identity preservation. The unbiased synthesized faces are then used to transform parent and child images into the same age group for verification. Experimental results on the KinFaceW-I and KinFaceW-II datasets show that RA-GAN outperforms prior methods, achieving an average improvement of 13.14% over SAM-GAN across all age groups and 9.1% over CUSP-GAN in the 60+ age group in terms of racial accuracy. Furthermore, RA-GAN consistently preserves identity features better than competing models and improves verification accuracy across all kinship relationships. These results demonstrate that RA-GAN provides a more fair, accurate, and identity-preserving solution for kinship verification.
 Be aware that the paper is still under revision in the journal.
@@ -15,6 +18,22 @@ Be aware that the paper is still under revision in the journal.
 #### Description
 Official implementation of the model RA-GAN from the paper "A Race Biass Free Face aging model"
 from the first image to the end Races are white, Asian , Black , Indian respectivly.
+
+### Project Tree
+```
+├── configs/              # Specifying the path's for
+|   ├── path_config       # fro setting the path of the datasets and the models
+├── models/               # Model architectures (GAN, encoders, etc.)
+|   ├── psp.py            # setting up the entire model and modules except generator
+|   ├── race_net.py       # the racenet for the training
+├── criteria/           # the losses and their implementations
+├── utils/              # Helper functions
+├── requirements.txt    # Python dependencies
+├── cmd_options.txt     # for internal  command running
+├── config.json         # the entire setup for hyperparams of the project
+├── main.py             # main file for training and inferencing 
+└── README.md           # Project description
+```
 
 
 ### Installation and setup
@@ -99,4 +118,4 @@ and givve them to the Kinship verificator model and get the output.
 
 one of the challenges here is the images in those datasets arent  covering full head thus our model cannot generate usefull images and we will get unreliable outputs.
 To overcome  this obstacle, first, we will use a data augmentation technique called  mirror augmentation. we believed putting the face of a person in the middle of the image and using using a good  mirror augmentation can somehow imply to out desired base image for the network. Still the image is not good enough for being base image for us thus we used a pretrained Pixle2Style2Pixle model trained on our dataset for getting a full head output for each imahe in the Kinface datasets.
-Then we will feed the generated images to RA-GAN and get the transformed images  for each ages and give them to the Kinship verificator. Here the Kinship verificator is a [D4ML]() model which has the best  capability  for extracting kinship information and correlations.
+Then we will feed the generated images to RA-GAN and get the transformed images  for each ages and give them to the Kinship verificator. Here the Kinship verificator is a [D4ML](https://www.researchgate.net/publication/379187260_Kinship_verification_based_on_multi-scale_feature_fusion?utm_source=chatgpt.com) model which has the best  capability  for extracting kinship information and correlations.
